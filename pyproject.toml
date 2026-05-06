@@ -3,20 +3,24 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "fetcher"
+name = "ffetch-cli"
 version = "0.1.0"
 description = "Smart GitHub repository discovery CLI"
 readme = "README.md"
-license = {text = "Proprietary"}
+license = "MIT"
 requires-python = ">=3.10"
 authors = [
-  {name = "Fetcher Maintainers"},
+  {name = "davinci"},
 ]
 keywords = ["cli", "github", "search", "repositories", "developer-tools"]
 classifiers = [
+  "Operating System :: OS Independent",
   "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
   "Environment :: Console",
   "Intended Audience :: Developers",
 ]
@@ -26,8 +30,19 @@ dependencies = [
   "typer>=0.12.0,<1.0.0",
 ]
 
+[project.urls]
+Homepage = "https://github.com/Damascus-dev/forkfetch"
+Repository = "https://github.com/Damascus-dev/forkfetch"
+Issues = "https://github.com/Damascus-dev/forkfetch/issues"
+
 [project.scripts]
 ffetch = "fetcher.main:app"
+
+[project.optional-dependencies]
+dev = [
+  "build>=1.2.1",
+  "twine>=5.1.1",
+]
 
 [tool.setuptools]
 package-dir = {"" = "."}
