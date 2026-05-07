@@ -9,7 +9,7 @@ Minimal GitHub repository search CLI.
 After the package is published, users on Windows, macOS, and Linux will be able to install it from any folder with:
 
 ```bash
-pip install ffetch-cli
+pip install forkfetch
 ```
 
 That installs the `ffetch` command globally for the current Python environment, so it can be run from any drive or working directory.

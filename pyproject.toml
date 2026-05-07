@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ffetch-cli"
+name = "forkfetch"
 version = "0.1.0"
 description = "Smart GitHub repository discovery CLI"
 readme = "README.md"
@@ -49,3 +49,4 @@ package-dir = {"" = "."}
 
 [tool.setuptools.packages.find]
 where = ["."]
+include = ["fetcher*"]
